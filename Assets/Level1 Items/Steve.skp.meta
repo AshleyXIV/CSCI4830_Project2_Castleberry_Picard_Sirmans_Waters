@@ -1,0 +1,141 @@
+fileFormatVersion: 2
+guid: 46b6f6b32634b944290e5269d539fb30
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 00000000010000000200000003000000
+  assetHash:
+    serializedVersion: 2
+    Hash: de5f4320bad188fa31c0f1920eda5347
+  longitude: -105.283
+  latitude: 40.017
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -5.7700214, y: 4.0490894, z: 8.508124}
+      lookAt: {x: 5.9236546, y: 0.6268538, z: -12.792747}
+      up: {x: 0.0671118, y: 0.9902279, z: -0.12224896}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Feed the world
+    100002: //RootNode
+    400000: Feed the world
+    400002: //RootNode
+    2100000: _defaultMat
+    2100002: '[0047_Khaki]'
+    2100004: '[0043_SaddleBrown]'
+    2100006: '[0040_Peru]'
+    2100008: '[0036_BurlyWood]'
+    2100010: '[0034_Wheat]'
+    2100012: '[0039_DarkOrange]'
+    2100014: '[0038_Orange]'
+    2100016: '[0037_SandyBrown]'
+    2100018: '[0098_DodgerBlue]'
+    2100020: '[0095_LightBlue]'
+    2100022: '[0056_Yellow]'
+    2100024: '[0057_DarkKhaki]'
+    2100026: '[0003_DeepPink]'
+    2100028: '[0016_Tomato]'
+    2100030: '[0104_MediumBlue]'
+    2100032: '[0064_Chartreuse]'
+    2100034: '[0082_LightSeaGreen]'
+    2100036: '[0045_Goldenrod]'
+    2100038: '[0042_Sienna]'
+    2300000: Feed the world
+    2300002: //RootNode
+    3300000: Feed the world
+    3300002: //RootNode
+    4300000: Mesh Steve
+    4300002: Mesh Feed the world
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
