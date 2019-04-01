@@ -4,24 +4,27 @@ using UnityEngine;
 
 public class Rotation : MonoBehaviour
 {
-    public OVRInput.Controller rController;
-    Vector2 rotateJoystick;
-    public Rigidbody rig;
-    // Start is called before the first frame update
+
+    const int speed = 1;
+
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        rotateJoystick = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick, rController);
-        Rotate(rotateJoystick);
-    }
 
-    void Rotate(Vector2 value)
+    void Update()
     {
-        if (value.x != 0.0f) rig.transform.rotation = Quaternion.Euler(0, rig.transform.rotation.y + (value.x * 15f), 0);
+
+
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
+
+
+        Quaternion rotation = transform.rotation;
+        rotation.x += moveHorizontal * speed * Time.deltaTime;
+        rotation.z += -moveVertical * speed * Time.deltaTime;
+        transform.rotation = rotation;
+
     }
 }
