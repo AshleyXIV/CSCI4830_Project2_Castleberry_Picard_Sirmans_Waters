@@ -20,6 +20,18 @@ public class TherapistGUIController : MonoBehaviour
         
     }
 
+    private void OnApplicationQuit()
+    {
+        Application.Quit();
+
+
+    }
+
+    public void QuitApp()
+    {
+        Application.Quit();
+    }
+
     public void buttonClickedHome()
     {
 		SceneManager.LoadScene(0, LoadSceneMode.Single);
