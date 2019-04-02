@@ -22,9 +22,17 @@ public class Movement : MonoBehaviour
 
         
         Vector3 position = rig.position;
-
-        position.x += moveHoriz * speed * Time.deltaTime;
-        position.z += moveVertical * speed * Time.deltaTime;
+        float relAngleF = Vector3.SignedAngle(transform.forward, Vector3.forward, Vector3.up);
+        if ((relAngleF > 0f && relAngleF < 90f) || (relAngleF < 0f && relAngleF > -90f))
+        {
+            position.x += moveHoriz * speed * Time.deltaTime;
+            position.z += -moveVertical * speed * Time.deltaTime;
+        }
+        else if ((relAngleF > 90f && relAngleF < 180f) || (relAngleF < -90f && relAngleF > -180f))
+        {
+            position.x += -moveHoriz * speed * Time.deltaTime;
+            position.z += moveVertical * speed * Time.deltaTime;
+        }
         rig.position = position;
         
     }
