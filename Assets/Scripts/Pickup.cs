@@ -28,9 +28,9 @@ public class Pickup : MonoBehaviour
                 transform.position = whatGrabbedMe.localToWorldMatrix.MultiplyPoint(posOffset);
                 transform.rotation = Quaternion.Inverse(transform.rotation) * rotOffset;
                 GetComponent<Rigidbody>().velocity = (whatGrabbedMe.localToWorldMatrix.MultiplyPoint(posOffset) - transform.position) / Time.fixedDeltaTime;
-                //float a; Vector3 x;
-                //(whatGrabbedMe.rotation * rotOffset * Quaternion.Inverse(transform.rotation)).ToAngleAxis(out a, out x);
-                //GetComponent<Rigidbody>().angularVelocity = (a * Mathf.Deg2Rad * x) / Time.fixedDeltaTime;
+                float a; Vector3 x;
+                (whatGrabbedMe.rotation * rotOffset * Quaternion.Inverse(transform.rotation)).ToAngleAxis(out a, out x);
+                GetComponent<Rigidbody>().angularVelocity = (a * Mathf.Deg2Rad * x) / Time.fixedDeltaTime;
         }
         else
         {
@@ -41,7 +41,7 @@ public class Pickup : MonoBehaviour
     void PickupBehavior(Transform t)
     {
         transform.position = t.position;
-        rotOffset = Quaternion.Inverse(t.rotation) * transform.rotation;
+        rotOffset = Quaternion.Inverse(t.rotation) * transform.rotation * Quaternion.AngleAxis(-90f, Vector3.right);
         posOffset = t.worldToLocalMatrix.MultiplyPoint(transform.position);
 
         GetComponent<Rigidbody>().isKinematic = true;

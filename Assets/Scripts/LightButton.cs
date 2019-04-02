@@ -15,15 +15,7 @@ public class LightButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (lights.isActiveAndEnabled && !lightsAreOn)
-        {
-            lights.gameObject.SetActive(false);
-            
-        }
-        if (!lights.isActiveAndEnabled && lightsAreOn)
-        {
-            lights.gameObject.SetActive(true);
-            
-        }
+        if (lights.isActiveAndEnabled && !lightsAreOn) lights.gameObject.SetActive(false);
+        if (!lights.isActiveAndEnabled && lightsAreOn) lights.gameObject.SetActive(true);
     }
 }
