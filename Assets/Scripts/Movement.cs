@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour
 {
 
     const int speed = 1;
-    
+    public Transform origin;
     void Start()
     {
 
@@ -17,14 +17,18 @@ public class Movement : MonoBehaviour
     {
 
         
-        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveHoriz = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        
-        Vector3 position = transform.position;
-        position.x += moveHorizontal * speed * Time.deltaTime;
-        position.z += -moveVertical * speed * Time.deltaTime;
-        transform.position = position;
+        if (moveHoriz != 0 || moveVertical != 0)
+        {
+            Vector3 position = transform.position;
 
+            position.x += moveHoriz * speed * Time.deltaTime;
+            position.z += -moveVertical * speed * Time.deltaTime;
+            transform.position = position;
+            origin.position = position;
+            transform.localPosition = new Vector3(0, 0, 0);
+        }
     }
 }
