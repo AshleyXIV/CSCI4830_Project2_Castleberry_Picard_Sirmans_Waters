@@ -30,7 +30,7 @@ public class TherapistGUIController : MonoBehaviour
     void Awake()
     {
 
-        TherapistGUIController.filename = Application.persistentDataPath + "\\Therapist_log" + DateTime.Now.Month + "-" + DateTime.Now.Day + "-" + DateTime.Now.Hour +  ".txt";
+        TherapistGUIController.filename = Application.persistentDataPath + "\\Therapist_log" + DateTime.Now.Month + "-" + DateTime.Now.Day + "-" + DateTime.Now.Hour + "-" + DateTime.Now.Minute +  ".txt";
         
     }
 
