@@ -41,7 +41,7 @@ public class Pickup : MonoBehaviour
     void PickupBehavior(Transform t)
     {
         transform.position = t.position;
-        rotOffset = Quaternion.Inverse(t.rotation) * transform.rotation * Quaternion.AngleAxis(-90f, Vector3.right);
+        rotOffset = Quaternion.Inverse(t.rotation) * transform.rotation;
         posOffset = t.worldToLocalMatrix.MultiplyPoint(transform.position);
 
         GetComponent<Rigidbody>().isKinematic = true;

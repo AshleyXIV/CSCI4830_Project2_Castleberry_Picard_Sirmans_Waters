@@ -26,7 +26,19 @@ public class Hand : MonoBehaviour
 
     private void OnTriggerStay(Collider c)
     {
-        if (!isHolding)
+        if (c.attachedRigidbody.GetComponent<LightButton>() != null)
+        {
+            triggerVal = OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, controller);
+
+            if (triggerVal >= 0.75f)
+            {
+
+                if (c.attachedRigidbody.GetComponent<LightButton>().lightsAreOn) c.attachedRigidbody.GetComponent<LightButton>().lightsAreOn = false;
+                else c.attachedRigidbody.GetComponent<LightButton>().lightsAreOn = true;
+            }
+        }
+
+        else if (!isHolding)
         {
             if (c.attachedRigidbody != null)
             {
@@ -73,6 +85,8 @@ public class Hand : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+       
+
         if (canPickUp)
         {
             canPickUp = false;

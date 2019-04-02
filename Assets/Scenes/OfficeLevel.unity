@@ -765,22 +765,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &66943131
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1198236531}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2021037712}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &94185438
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,22 +840,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94185438}
   m_CullTransparentMesh: 0
---- !u!1 &113997777
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1198236531}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1198236532}
-  m_Layer: 0
-  m_Name: laptop_open (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &142072345
 GameObject:
   m_ObjectHideFlags: 0
@@ -4148,6 +4116,7 @@ GameObject:
   - component: {fileID: 373426887}
   - component: {fileID: 373426886}
   - component: {fileID: 373426890}
+  - component: {fileID: 373426891}
   m_Layer: 0
   m_Name: ManagerButton
   m_TagString: Untagged
@@ -4241,6 +4210,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lights: {fileID: 1780344979}
   lightsAreOn: 1
+--- !u!54 &373426891
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373426885}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &389040513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5741,7 +5726,7 @@ GameObject:
   - component: {fileID: 534669903}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: MainCamera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6579,22 +6564,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOptional: 0
---- !u!1 &677422840
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1237158145}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1237158146}
-  m_Layer: 0
-  m_Name: laptop_open (1) (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!43 &704608177
 Mesh:
   m_ObjectHideFlags: 0
@@ -7098,22 +7067,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
---- !u!4 &784502084
+--- !u!4 &784502084 stripped
 Transform:
-  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 400000, guid: 293c4c39794de86489583e28bc72ee12,
     type: 3}
   m_PrefabInstance: {fileID: 1237158145}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923845725}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1903917558}
-  m_Father: {fileID: 1237158146}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &795198798
 GameObject:
   m_ObjectHideFlags: 0
@@ -7193,24 +7152,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 795198798}
   m_CullTransparentMesh: 0
---- !u!1 &810178011 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100004, guid: 126d619cf4daa52469682f85c1378b4a,
+--- !u!4 &810178016 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a,
     type: 3}
   m_PrefabInstance: {fileID: 927974848}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &810178013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 810178011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e38a68954102ae46a881027b09e7d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &820782622
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11723,8 +11670,8 @@ Transform:
   - {fileID: 1361257304}
   - {fileID: 488423072}
   - {fileID: 373426889}
-  - {fileID: 1237158146}
-  - {fileID: 1198236532}
+  - {fileID: 784502084}
+  - {fileID: 2021037712}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12448,6 +12395,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 963935899}
     m_Modifications:
+    - target: {fileID: 100000, guid: 293c4c39794de86489583e28bc72ee12, type: 3}
+      propertyPath: m_Name
+      value: laptop_open
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 293c4c39794de86489583e28bc72ee12, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.2129536
@@ -12492,31 +12443,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -45
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 293c4c39794de86489583e28bc72ee12, type: 3}
-      propertyPath: m_Name
-      value: laptop_open
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 293c4c39794de86489583e28bc72ee12, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 99b2e93a7d54c57418a8545bc16edbde, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 293c4c39794de86489583e28bc72ee12, type: 3}
---- !u!4 &1198236532
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1198236531}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 113997777}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2021037712}
-  m_Father: {fileID: 963935899}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1227222500
 GameObject:
   m_ObjectHideFlags: 0
@@ -12593,6 +12525,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 963935899}
     m_Modifications:
+    - target: {fileID: 100000, guid: 293c4c39794de86489583e28bc72ee12, type: 3}
+      propertyPath: m_Name
+      value: laptop_open (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 293c4c39794de86489583e28bc72ee12, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.8620466
@@ -12637,31 +12573,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 293c4c39794de86489583e28bc72ee12, type: 3}
-      propertyPath: m_Name
-      value: laptop_open (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 293c4c39794de86489583e28bc72ee12, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3b00661f8c3fc5f49baa64d2e2da6ef4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 293c4c39794de86489583e28bc72ee12, type: 3}
---- !u!4 &1237158146
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1237158145}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677422840}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 784502084}
-  m_Father: {fileID: 963935899}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1268629263
 GameObject:
   m_ObjectHideFlags: 0
@@ -12675,6 +12592,7 @@ GameObject:
   - component: {fileID: 1268629265}
   - component: {fileID: 1268629264}
   - component: {fileID: 1268629268}
+  - component: {fileID: 1268629269}
   m_Layer: 0
   m_Name: LightButton
   m_TagString: Untagged
@@ -12768,6 +12686,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lights: {fileID: 634426266}
   lightsAreOn: 1
+--- !u!54 &1268629269
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268629263}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1270234335
 GameObject:
   m_ObjectHideFlags: 0
@@ -15325,6 +15259,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285712286}
   m_CullTransparentMesh: 0
+--- !u!1 &1311902328 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 126d619cf4daa52469682f85c1378b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 927974848}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1311902329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311902328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e38a68954102ae46a881027b09e7d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rig: {fileID: 810178016}
 --- !u!1001 &1313580904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18488,6 +18441,7 @@ GameObject:
   - component: {fileID: 1753869115}
   - component: {fileID: 1753869114}
   - component: {fileID: 1753869113}
+  - component: {fileID: 1753869117}
   m_Layer: 0
   m_Name: LaptopScreen1
   m_TagString: Untagged
@@ -18521,7 +18475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c93ed3fd6c41b04aaba5db228bca458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lights: {fileID: 0}
+  lights: {fileID: 1902146110}
   lightsAreOn: 1
 --- !u!65 &1753869114
 BoxCollider:
@@ -18581,6 +18535,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753869111}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1753869117
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753869111}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1766305508
 GameObject:
   m_ObjectHideFlags: 0
@@ -19038,6 +19008,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1902146109}
   - component: {fileID: 1902146108}
+  - component: {fileID: 1902146110}
   m_Layer: 0
   m_Name: ComputerLight
   m_TagString: Untagged
@@ -19097,6 +19068,19 @@ Transform:
   m_Father: {fileID: 1797302499}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -45, z: 0}
+--- !u!114 &1902146110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902146107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e493e66753fcba4eb7cccf3a7378b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOptional: 0
 --- !u!1 &1903917557
 GameObject:
   m_ObjectHideFlags: 0
@@ -19110,6 +19094,7 @@ GameObject:
   - component: {fileID: 1903917561}
   - component: {fileID: 1903917560}
   - component: {fileID: 1903917559}
+  - component: {fileID: 1903917563}
   m_Layer: 0
   m_Name: LaptopScreen2
   m_TagString: Untagged
@@ -19143,7 +19128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c93ed3fd6c41b04aaba5db228bca458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lights: {fileID: 0}
+  lights: {fileID: 2091358926}
   lightsAreOn: 1
 --- !u!65 &1903917560
 BoxCollider:
@@ -19203,22 +19188,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903917557}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1923845725
-GameObject:
+--- !u!54 &1903917563
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1237158145}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 784502084}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_GameObject: {fileID: 1903917557}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1926206745
 GameObject:
   m_ObjectHideFlags: 0
@@ -19702,22 +19687,12 @@ Transform:
   m_Father: {fileID: 1344925606}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &2021037712
+--- !u!4 &2021037712 stripped
 Transform:
-  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 400000, guid: 293c4c39794de86489583e28bc72ee12,
     type: 3}
   m_PrefabInstance: {fileID: 1198236531}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 66943131}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1753869112}
-  m_Father: {fileID: 1198236532}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2026224072
 GameObject:
   m_ObjectHideFlags: 0
@@ -20368,6 +20343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2091358925}
   - component: {fileID: 2091358924}
+  - component: {fileID: 2091358926}
   m_Layer: 0
   m_Name: ComputerLight (1)
   m_TagString: Untagged
@@ -20427,6 +20403,19 @@ Transform:
   m_Father: {fileID: 1797302499}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &2091358926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091358923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e493e66753fcba4eb7cccf3a7378b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOptional: 0
 --- !u!43 &2128490557
 Mesh:
   m_ObjectHideFlags: 0

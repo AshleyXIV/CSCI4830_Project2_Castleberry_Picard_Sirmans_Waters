@@ -17,13 +17,13 @@ public class Rotation : MonoBehaviour
     {
 
 
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        float moveHorizontal = Input.GetAxis("Oculus_CrossPlatform_SecondaryThumbstickHorizontal");
+        //float moveVertical = Input.GetAxis("Vertical");
 
 
         Quaternion rotation = transform.rotation;
-        rotation.x += moveHorizontal * speed * Time.deltaTime;
-        rotation.z += -moveVertical * speed * Time.deltaTime;
+        rotation.y += moveHorizontal * speed * Time.deltaTime;
+        //rotation.z += -moveVertical * speed * Time.deltaTime;
         transform.rotation = rotation;
 
     }
