@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour
 {
 
     const int speed = 1;
-    public Transform rig;
+    public Transform origin;
     void Start()
     {
 
@@ -20,20 +20,15 @@ public class Movement : MonoBehaviour
         float moveHoriz = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        
-        Vector3 position = rig.position;
-        float relAngleF = Vector3.SignedAngle(transform.forward, Vector3.forward, Vector3.up);
-        if ((relAngleF > 0f && relAngleF < 90f) || (relAngleF < 0f && relAngleF > -90f))
+        if (moveHoriz != 0 || moveVertical != 0)
         {
+            Vector3 position = transform.position;
+
             position.x += moveHoriz * speed * Time.deltaTime;
             position.z += -moveVertical * speed * Time.deltaTime;
+            transform.position = position;
+            origin.position = position;
+            transform.localPosition = new Vector3(0, 0, 0);
         }
-        else if ((relAngleF > 90f && relAngleF < 180f) || (relAngleF < -90f && relAngleF > -180f))
-        {
-            position.x += -moveHoriz * speed * Time.deltaTime;
-            position.z += moveVertical * speed * Time.deltaTime;
-        }
-        rig.position = position;
-        
     }
 }
