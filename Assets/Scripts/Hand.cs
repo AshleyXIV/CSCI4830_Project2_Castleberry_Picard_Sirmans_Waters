@@ -38,7 +38,7 @@ public class Hand : MonoBehaviour
             }
         }
 
-        else if (!isHolding)
+        else if (!isHolding && c.GetComponent<Pickup>() != null)
         {
             if (c.attachedRigidbody != null)
             {
@@ -78,7 +78,7 @@ public class Hand : MonoBehaviour
                 obj.transform.parent = null;
                 obj = null;
 
-                GetComponent<Renderer>().material.color = new Color(1, 0, 0, 0.45f);
+                GetComponent<Renderer>().material.color = new Color(1, 1, 1, 0.45f);
             }
         }
     }
@@ -90,7 +90,7 @@ public class Hand : MonoBehaviour
         if (canPickUp)
         {
             canPickUp = false;
-            GetComponent<Renderer>().material.color = new Color(1, 0, 0, 0.45f);
+            GetComponent<Renderer>().material.color = new Color(1, 1, 1, 0.45f);
         }
     }
 }
