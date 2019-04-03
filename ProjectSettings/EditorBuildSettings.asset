@@ -5,7 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/HomeLevel.unity
+    guid: 7a698afcc0cabc54da80ad74a9f0880a
+  - enabled: 1
+    path: Assets/Scenes/OfficeLevel.unity
+    guid: eb73cc5227e2200408b0449fb07ed092
+  - enabled: 1
+    path: Assets/Scenes/Starting-Survey Room with Menu Overlay.unity
+    guid: 6571e69af287bba4cbdda5647fb23660
   m_configObjects: {}
