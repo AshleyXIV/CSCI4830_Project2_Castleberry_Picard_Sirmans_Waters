@@ -9,7 +9,8 @@ public class LightButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (!lights.isOptional) lightsAreOn = true;
+        if (!lights.isOptional)
+            lightsAreOn = true;
     }
 
     // Update is called once per frame
@@ -17,5 +18,14 @@ public class LightButton : MonoBehaviour
     {
         if (lights.isActiveAndEnabled && !lightsAreOn) lights.gameObject.SetActive(false);
         if (!lights.isActiveAndEnabled && lightsAreOn) lights.gameObject.SetActive(true);
+
+        /*if(lightsAreOn == false)
+        {
+            lights.gameObject.SetActive(true);
+        }
+        else
+        {
+            lights.gameObject.SetActive(false);
+        }*/
     }
 }
